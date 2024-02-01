@@ -1,0 +1,126 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+
+#root {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.media {
+  height: 0;
+  padding-top: 150%;
+}
+.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+.imagenCard:hover .overlay {
+  opacity: 1;
+}
+.imagenCard:hover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 9999;
+}
+.menuNavItems:link,
+.menuNavItems:visited,
+.menuNavItems:active,
+.menuNavItems {
+  text-decoration: none;
+  color: antiquewhite;
+}
+a:link,
+a:visited,
+a:active,
+a {
+  text-decoration: none;
+  color: rgb(17, 14, 197);
+}
+.menuNavItems:before {
+  width: 100%;
+  height: 3px;
+  background: #492fca;
+  top: 47%;
+  animation: out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+.menuNavItems:hover:before {
+  animation: in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+.netLogo {
+  background: #b1060f;
+  height: 125px;
+  width: 30px;
+  position: relative;
+}
+.netLogo::before {
+  background: #b1060f;
+  height: 125px;
+  width: 30px;
+  position: absolute;
+  content: '';
+  left: 90px;
+}
+.netLogo::after {
+  background: transparent;
+  height: 20px;
+  width: 175px;
+  position: absolute;
+  content: '';
+  left: -15px;
+  bottom: -10px;
+  border-radius: 50%;
+}
+.spanLogo {
+  position: absolute;
+  height: 125px;
+  width: 30px;
+  background: #e50913;
+  left: 46px;
+  transform: skew(20deg);
+  box-shadow: 0 0 10px -4px #222;
+}
